@@ -1,6 +1,5 @@
 import {
     ERRORS,
-    ERROR,
     STATE_IDLE,
     STATE_PLAYING,
     STATE_STALLED,
@@ -9,7 +8,6 @@ import {
     STATE_AD_PLAYING,
     STATE_PAUSED,
     STATE_ERROR,
-    CONTENT_COMPLETE,
     CONTENT_SEEK,
     CONTENT_BUFFER_FULL,
     CONTENT_SEEKED,
@@ -22,12 +20,8 @@ import {
     PLAYER_UNKNWON_NETWORK_ERROR,
     PLAYER_UNKNWON_DECODE_ERROR,
     PLAYER_FILE_ERROR,
-    PROVIDER_HTML5,
-    PROVIDER_WEBRTC,
-    PROVIDER_DASH,
-    PROVIDER_HLS
 } from "api/constants";
-import {extractVideoElement, errorTrigger} from "api/provider/utils";
+import {errorTrigger} from "api/provider/utils";
 
 /**
  * @brief   Trigger on various video events.

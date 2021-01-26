@@ -15,7 +15,7 @@ const Controller = function () {
     const that = {};
     OvenPlayerConsole.log("ProviderController loaded.");
 
-    const registeProvider = (name, provider) => {
+    const registerProvider = (name, provider) => {
         if (Providers[name]) {
             return;
         }
@@ -27,7 +27,7 @@ const Controller = function () {
         html5: function () {
             return require.ensure(['api/provider/html5/providers/Html5'], function (require) {
                     const provider = require('api/provider/html5/providers/Html5').default;
-                    registeProvider(PROVIDER_HTML5, provider);
+                    registerProvider(PROVIDER_HTML5, provider);
                     return {name: PROVIDER_HTML5, provider: provider};
                 }, function (err) {
                     throw new Error('Network error');
@@ -37,7 +37,7 @@ const Controller = function () {
         webrtc: function () {
             return require.ensure(['api/provider/html5/providers/WebRTC'], function (require) {
                     const provider = require('api/provider/html5/providers/WebRTC').default;
-                    registeProvider(PROVIDER_WEBRTC, provider);
+                    registerProvider(PROVIDER_WEBRTC, provider);
                     return {name: PROVIDER_WEBRTC, provider: provider};
                 }, function (err) {
                     throw new Error('Network error');
@@ -47,7 +47,7 @@ const Controller = function () {
         dash: function () {
             return require.ensure(['api/provider/html5/providers/Dash'], function (require) {
                     const provider = require('api/provider/html5/providers/Dash').default;
-                    registeProvider(PROVIDER_DASH, provider);
+                    registerProvider(PROVIDER_DASH, provider);
                     return {name: PROVIDER_DASH, provider: provider};
                 }, function (err) {
                     throw new Error('Network error');
@@ -57,7 +57,7 @@ const Controller = function () {
         hls: function () {
             return require.ensure(['api/provider/html5/providers/Hls'], function (require) {
                     const provider = require('api/provider/html5/providers/Hls').default;
-                    registeProvider(PROVIDER_HLS, provider);
+                    registerProvider(PROVIDER_HLS, provider);
                     return {name: PROVIDER_HLS, provider: provider};
                 }, function (err) {
                     throw new Error('Network error');
@@ -67,7 +67,7 @@ const Controller = function () {
         rtmp: function () {
             return require.ensure(['api/provider/flash/providers/Rtmp'], function (require) {
                     const provider = require('api/provider/flash/providers/Rtmp').default;
-                    registeProvider(PROVIDER_RTMP, provider);
+                    registerProvider(PROVIDER_RTMP, provider);
                     return {name: PROVIDER_RTMP, provider: provider};
                 }, function (err) {
                     throw new Error('Network error');

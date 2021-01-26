@@ -6,18 +6,7 @@ import { VASTClient, VASTTracker } from 'utils/vast-client';
 import AdsEventsListener from "api/ads/vast/Listener";
 import {TEMP_VIDEO_URL} from "api/ads/utils";
 import {
-    ERROR,
-    STATE_IDLE,
-    STATE_PLAYING,
-    STATE_STALLED,
-    STATE_LOADING,
-    STATE_COMPLETE,
-    STATE_AD_LOADED,
-    STATE_AD_PLAYING,
-    STATE_AD_PAUSED,
-    STATE_AD_COMPLETE,
     STATE_AD_ERROR,
-    CONTENT_META,
     PROVIDER_DASH
 } from "api/constants";
 

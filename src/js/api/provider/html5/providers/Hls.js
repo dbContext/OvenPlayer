@@ -5,11 +5,10 @@ import Provider from "api/provider/html5/Provider";
 import {errorTrigger} from "api/provider/utils";
 import {
     PROVIDER_HLS,
-    PLAYER_STATE, STATE_IDLE, STATE_LOADING,
-    INIT_DASH_UNSUPPORT, ERRORS,
+    PLAYER_STATE, STATE_IDLE, STATE_LOADING, ERRORS,
     INIT_HLSJS_NOTFOUND
 } from "api/constants";
-import _ from "utils/underscore";
+
 import {
     PLAYER_UNKNWON_ERROR,
     PLAYER_UNKNWON_NETWORK_ERROR,

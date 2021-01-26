@@ -5,7 +5,7 @@ import Ima from "api/ads/ima/Ad";
 import Vast from "api/ads/vast/Ad";
 import EventEmitter from "api/EventEmitter";
 import EventsListener from "api/provider/html5/Listener";
-import {extractVideoElement, pickCurrentSource} from "api/provider/utils";
+import {pickCurrentSource} from "api/provider/utils";
 import {
     WARN_MSG_MUTEDPLAY,
     UI_ICONS, PLAYER_WARNING,

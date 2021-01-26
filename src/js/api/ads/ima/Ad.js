@@ -4,7 +4,6 @@
 import AdsEventsListener from "api/ads/ima/Listener";
 import {TEMP_VIDEO_URL} from "api/ads/utils";
 import LA$ from "utils/likeA$.js";
-import {errorTrigger} from "api/provider/utils";
 import {
     ERROR,
     CONTENT_VOLUME,

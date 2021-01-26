@@ -5,19 +5,18 @@ import La$ from 'utils/likeA$';
 import {getScriptPath} from 'utils/webpack';
 
 
-__webpack_public_path__ = getScriptPath('ovenplayer.sdk.js');
+// __webpack_public_path__ = getScriptPath('ovenplayer.sdk.js');
 
 /**
  * Main OvenPlayerSDK object
  */
-const OvenPlayerSDK = window.OvenPlayerSDK = {};
+const OvenPlayerSDK = {};
 
 const playerList = OvenPlayerSDK.playerList = [];
 
 export const checkAndGetContainerElement = function(container) {
     if (!container) {
 
-        // TODO(rock): Should cause an error.
         return null;
     }
 
@@ -30,7 +29,7 @@ export const checkAndGetContainerElement = function(container) {
 
         containerElement = container;
     } else {
-        // TODO(rock): Should cause an error.
+
         return null;
     }
 
